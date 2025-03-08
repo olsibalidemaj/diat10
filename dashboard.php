@@ -18,7 +18,7 @@
 <body>
     <?php
     include_once 'config.php';
-    $sql = "SELECT 'email' from users";
+    $sql = "SELECT * from users";
     $getUsers = $conn->prepare($sql);
     $getUsers->execute();
 
